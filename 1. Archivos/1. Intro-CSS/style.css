@@ -1,0 +1,59 @@
+/* El asterisco nos sirve para hacer los resets de nivel más bajo. */
+/* El 0,0,0 es el elemento de especificidad de nivel más bajo. */
+* {
+  background-color: rgb(160, 125, 160);
+}
+
+/* Estilando usando la etiqueta.*/
+/* Las etiquetas no llevan el punto*/
+/* Las etiquetas tienen 0,0,1 de nivel de especificidad. */
+h1 {
+  color: rgb(88, 14, 14);
+  font-size: 72px;
+  background-color: rgb(248, 198, 193);
+}
+
+/* PoniéndoLe estilo a una etiqueta que se repite varias veces. */
+div {
+  background-color: silver;
+  margin-top: 5%;
+}
+
+/* Los class son los siguientes en especifidad: 0,1,0. Valen 10 más que las etiquetas.*/
+.divDistinto {
+  background-color: turquoise;
+}
+
+/* Los id tienen 1,0,0 de especificidad. */
+#textolorem {
+  color: white;
+}
+
+/* Id + etiqueta hija tienen especificidad 1,0,1. */
+#textoLorem span {
+  color: palevioletred;
+  background-color: papayawhip;
+  cursor: pointer;
+}
+
+/* Podemos combinar, ahora es 0, 2, 1 */
+p.textoLorem.texto2 {
+  color: rgb(0, 110, 255);
+}
+
+/* Podemos combinar, ahora es 0,1,1 (etiqueta + class). */
+p.textoLorem {
+  color: yellow;
+  background-color: aliceblue;
+}
+
+/* El important pasa por encima de todo. Ahora es 1,0,1,0. */
+.noHaganEsto {
+  color: rebeccapurple !important;
+}
+
+/* Podemos combinar dos etiquetas. Acá estamos sumando dos especificidades bien bajas. Ahora es 0,0,2. */
+ul li {
+  list-style-type: square;
+  color: pink;
+}

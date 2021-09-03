@@ -1,0 +1,23 @@
+/* Podemos ponerle el mismo estilo a varias cosas distintas, separándolo con una coma. */
+h1,
+p {
+  color: peru;
+  font-family: "Roboto", sans-serif;
+}
+
+/* El font-weight no es el tamaño es el peso. No tenemos que aclararle ninguna otra medida. */
+h1 {
+  font-weight: 100;
+  font-size: 2em;
+}
+
+/* Cuando tienen el mismo nivel de especificidad y la misma propiedad, elige el último valor. */
+p {
+  color: plum;
+  font-weight: 900;
+  font-size: 3em;
+}
+
+.pixel {
+  font-size: 48px;
+}

@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(157, 190, 157);
+  margin: 0;
+}
+
+/* El orden en el CSS no afecta a los estilos, excepto que tengan el mismo valor de especificidad. */
+.Lorem {
+  color: peru;
+}
+
+div {
+  background-color: paleturquoise;
+  /* Arriba, derecha, abajo, izquierda */
+  margin: 4% 25% 3% 10%;
+  padding: 0 5%;
+  /* Border-radius sí lo ponemos en píxeles. */
+  border-radius: 10px;
+}
+
+div p {
+  color: rebeccapurple;
+}
+
+p {
+  color: orangered;
+}
